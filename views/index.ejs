@@ -1,5 +1,82 @@
 <html>
-  <body>
-    <h1>Hello Sweet <%= name %>!</h1>
-  </body>
+  <head>
+    <link href="/css/application.css" rel="stylesheet" />
+  </head>
+
+<body>
+  <header id="top" class="main-header">
+    <span class="title">Learn about what's going on in the world of skateboarding through an old guy's perspective.</span>
+    <h1>Tre Flip</h1>
+
+  </header>
+
+  <div class="primary-content t-border">
+    <p class="intro">
+      Skateboarding has been part of my life for 25 years, and will always be in some compacity. On this site you will find lots of suggestions and information about skateboarding. Come take a look and let me know what you think, in the comment box below.
+    </p>
+    <a class="callout" href="#more">Find out more</a>
+
+    <div class="skateboards">
+      <h2>Check out board shapes and sizes</h2>
+      <p>There are many board companies to chose from, and also sizes and shapes. Choosing the right one for you is sometimes trial and error. There is no wrong shape or size board to ride, it's all about preference. Wide, Skinny, and Concave.
+        <a href="#wide">wide</a>, <a href="#skinny">skinny</a>, and <a href="#concave">concave</a>.
+      </p>
+    </div>
+    <!-- End .skateboards -->
+
+    <a class="callout" href="#skateboards">See skateboard decks</a>
+  </div>
+  <!-- End .primary-content -->
+
+  <div class="secondary-content t-border group">
+    <div class="skateparks">
+      <img src="img" alt="Skatepark">
+      <h3>From Skateparks to Cities</h3>
+      <p>
+        There are skateparks popping up all over the U.S., and there are no shortage of cities to skate as well. In this section I will preview some of these places to skate.
+      </p>
+      <ul>
+        <li><a href="#cities">Cities</a></li>
+        <li><a href="#outdoor">Outdoor Skateparks</a></li>
+        <li><a href="#indoor">Indoor Skateparks</a></li>
+      </ul>
+    </div>
+
+    <div class="skater">
+      <img src="img" alt="Picture of Skater">
+      <h3>Skater of the Month</h3>
+      <p>
+        Below, I'll profile a skater I noticed while doing research for this site, and introduce you to him or her.
+      </p>
+      <ol>
+        <li>Where are they from?</li>
+        <li>Style of Skating</li>
+        <li>What video part to watch</li>
+        <li>Comments:</li>
+        <div class="container">
+          <form>
+            <div class="form-group">
+              <textarea class="form-control status-box" rows="2" placeholder="What's on your mind?"></textarea>
+            </div>
+          </form>
+          <div class="button-group pull-right">
+            <p class="counter">140</p>
+            <a href="#" class="btn btn-primary">Post</a>
+          </div>
+
+          <ul class="posts">
+          </ul>
+        </div>
+      </ol>
+    </div>
+  </div>
+  <!-- End .secondary-content -->
+
+  <footer class="main-footer">
+    <p>All rights reserved <a href="#">Tre Flip</a>.</p>
+    <a href="#top">Back to top &raquo;</a>
+  </footer>
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="/js/application.js"></script>
+</body>
 </html>

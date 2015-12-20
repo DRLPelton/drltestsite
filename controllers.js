@@ -1,7 +1,7 @@
 module.exports = function(app){
   //endpoints
   app.get('/', function (req, res) {
-    res.render('index', { name: 'Darryl' } );
+    res.render('index');
   });
 
   app.get('/two', function (req, res) {
