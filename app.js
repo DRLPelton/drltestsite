@@ -1,20 +1,11 @@
 //included libraries
 var express = require('express');
+var controllers = require('./controllers');
 
 //server configuration
 var app = express();
-
 app.set('view engine', 'ejs');
-
-
-//endpoints
-app.get('/', function (req, res) {
-  res.render('index', { name: 'Darryl' } );
-});
-
-app.get('/two', function (req, res) {
-  res.send('<html><body><h1>New Page</h1></body></html>');
-});
+controllers(app);
 
 //server startup
 var server = app.listen(3000, function () {
